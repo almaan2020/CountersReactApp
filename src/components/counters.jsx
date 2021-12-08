@@ -15,9 +15,8 @@ class Counters extends React.Component {
           <Counter
             key={counter.id}
             onDelete={this.props.onDelete} //bubbling event to parent
-            onIncrement={this.props.onIncrement} //bubbling event to parent
-            // value={counter.value}
-            // id={counter.id}
+            onIncrement={this.props.onIncrement}
+            onDecrement={this.props.onDecrement} 
             counter={counter}
           >
             <h5>counter#{counter.id}</h5>
